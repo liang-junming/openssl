@@ -1,0 +1,2 @@
+# openssl
+openssl库的移植。本套代码完成在arm平台移植openssl库，并有demo代码调用openssl库中的RSA相关接口生成sign和verify两个应用程序提供签名和校验功能
