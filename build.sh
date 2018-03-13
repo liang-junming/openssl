@@ -18,3 +18,18 @@ make clean
 make
 make install
 mv /usr/local/ssl ../ssl_out_host
+cd ../
+
+#build executable binary
+cd sample
+mkdir bin_host
+mkdir bin_arm
+cd src
+make clean
+make
+mv sign verify ../bin_host
+
+make clean
+make TARGET_ARM=1
+mv sign verify ../bin_arm
+
